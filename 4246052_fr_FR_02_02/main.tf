@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "web" {
   account_replication_type = "GRS"
 
   tags = {
-    environment = "staging"
+    environment = "test"
   }
 }
 
@@ -22,7 +22,7 @@ resource "azurerm_storage_account_static_website" "web" {
 }
 
 resource "azurerm_storage_blob" "web" {
-  name                   = "index.html"
+  name                   = "index1.html"
   storage_account_name   = azurerm_storage_account.web.name
   storage_container_name = "$web"
   type                   = "Block"
@@ -30,3 +30,11 @@ resource "azurerm_storage_blob" "web" {
   source                 = "index.html"
 }
 
+resource "azurerm_storage_blob" "web2" {
+  name                   = "index2.html"
+  storage_account_name   = azurerm_storage_account.web.name
+  storage_container_name = "$web"
+  type                   = "Block"
+  content_type           = "text/html"
+  source                 = "index.html"
+}

@@ -1,6 +1,6 @@
 resource "azurerm_resource_group" "web" {
-  name     = "web"
-  location = "West Europe"
+  name     = var.rg
+  location = var.region
 }
 
 resource "azurerm_storage_account" "web" {
@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "web" {
   account_replication_type = "GRS"
 
   tags = {
-    environment = "staging"
+    environment = "test"
   }
 }
 
@@ -29,4 +29,5 @@ resource "azurerm_storage_blob" "web" {
   content_type           = "text/html"
   source                 = "index.html"
 }
+
 

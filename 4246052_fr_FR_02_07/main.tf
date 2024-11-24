@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "web" {
-  name     = "web"
+  name     = "web_rg"
   location = "West Europe"
 }
 
@@ -11,7 +11,7 @@ resource "azurerm_storage_account" "web" {
   account_replication_type = "GRS"
 
   tags = {
-    environment = "staging"
+    environment = "test"
   }
 }
 
