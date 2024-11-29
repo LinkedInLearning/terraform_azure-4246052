@@ -1,11 +1,11 @@
 locals {
   environment = "development"
-  size = var.environment == "prod" ? "Standard_F2" : "Standard_F1"
+  size = var.region == "West Europe" ? "Standard_F2" : "Standard_F1"
 }
 
 resource "azurerm_resource_group" "web" {
   name     = "web"
-  location = "West Europe"
+  location = var.region
   tags = {
     Env = local.environment
   }
@@ -64,7 +64,7 @@ resource "azurerm_linux_virtual_machine" "web1" {
   tags = {
     Env = local.environment
   }
-  size                = local.size
+  size = var.region == "West Europe" ? "Standard_F2" : "Standard_F1"
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.web1.id,

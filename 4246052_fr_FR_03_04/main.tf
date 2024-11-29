@@ -1,5 +1,6 @@
 locals {
   environment = "development"
+  size        = "Standard_F1"
 }
 
 resource "azurerm_resource_group" "web" {
@@ -63,7 +64,7 @@ resource "azurerm_linux_virtual_machine" "web1" {
   tags = {
     Env = local.environment
   }
-  size                = "Standard_F2"
+  size                = local.size
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.web1.id,
@@ -94,7 +95,7 @@ resource "azurerm_linux_virtual_machine" "web2" {
   tags = {
     Env = local.environment
   }
-  size                = "Standard_F2"
+  size                = local.size
   admin_username      = "adminuser"
   network_interface_ids = [
     azurerm_network_interface.web2.id,

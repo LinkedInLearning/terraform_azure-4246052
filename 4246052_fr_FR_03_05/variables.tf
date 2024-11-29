@@ -16,7 +16,6 @@ variable "rg" {
 variable "region" {
   type = string
   description  = "Location"
-  default = "West Europe"
 }
 
 variable "environment" {
