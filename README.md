@@ -4,30 +4,11 @@ Ce dossier Repository est lié au cours `L'essentiel de Terraform pour Azure`. L
 
 ![Nom final de la formation][lil-thumbnail-url] 
 
-DESCRIPTION DE LA FORMATION
-
-## Instructions
-
-Ce dossier Repository a des branches pour chacune des vidéos du cours. Vous pouvez utiliser le menu des Branches sur GitHub afin d’accéder aux passages qui vous intéressent. Vous pouvez également rajouter `/tree/BRANCH_NAME` à l’URL afin d’accéder à la branche qui vous intéresse. 
-
-## Branches
-
-Les branches sont structurées de manière à correspondre aux vidéos du cours. La convention de nommage est : `CHAPITRE#_VIDEO#`. Par exemple, la branche nommée`02_03` correspond au second chapitre, et à la troisième vidéo de ce chapitre. Certaines branches ont un état de départ et de fin.  
-La branche `02_03_d` correspond au code du début de la vidéo.  
-La branche `02_03_f` correspond au code à la fin de la vidéo.  
-La branche master correspond au code à la fin de la formation. 
-
-## Installation
-
-1. Pour utiliser ces fichiers d’exercice, vous avez besoin de : 
-   - [Liste des logiciels/dépendances utiles à la formation] 
-2. Clonez ce dossier Repository sur votre machine locale (Mac), CMD (Windows), ou sur un outil GUI tel que SourceTree. 
-3. [Instructions spécifiques au cours] 
-
+Plongez dans l’univers de Terraform, un outil incontournable pour la gestion de l'infrastructure en tant que code (IaC). Cette formation vous guidera à travers les concepts fondamentaux, ainsi que l’installation et la configuration de Terraform dans votre environnement. Vous apprendrez à utiliser les commandes essentielles telles que terraform init, terraform plan, terraform apply et terraform destroy, tout en explorant des cas d'utilisation pratiques. Vous verrez comment gérer efficacement les espaces de travail et les fichiers d'état, en mettant en avant la différence entre les états locaux et distants. Enfin, vous apprendrez à créer et à utiliser des modules Terraform pour réutiliser votre code et simplifier la gestion de vos configurations, garantissant ainsi une approche cohérente pour vos projets sur Azure.
 
 ### Formateur
 
-**Nom du formateur** 
+**Samir Lakhdari** 
 
  Retrouvez mes autres formations sur [LinkedIn Learning][lil-URL-trainer].
 
