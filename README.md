@@ -33,7 +33,7 @@ La branche master correspond au code à la fin de la formation.
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 [lil-course-url]: https://www.linkedin.com
-[lil-thumbnail-url]: https:
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4D0DAQFWhtYXEgIGjQ/learning-public-crop_675_1200/learning-public-crop_675_1200/0/1737970884405?e=2147483647&v=beta&t=113K8WOiHv_LB8QtgV5yudz_p8_7wqNjDphRk39i21k
 [lil-URL-trainer]: https://
 
 [1]: # (End of FR-Instruction ###############################################################################################)
